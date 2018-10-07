@@ -7,12 +7,12 @@ import moment from 'moment';
 // Action Type
 const PREVIOUS = 'apod/PREVIOUS';
 const NEXT = 'apod/NEXT';
-const get_APOD = 'apod/get_APOD';
+const GET_APOD = 'apod/GET_APOD';
 
 // Action Creaters
 export const previous = createAction(PREVIOUS);
 export const next = createAction(NEXT);
-export const getApod = createAction(get_APOD, api.getAPOD); // date
+export const getApod = createAction(GET_APOD, api.getAPOD); // date
 
 // Initial State
 const initialState = Map({
@@ -41,7 +41,7 @@ export default handleActions(
       ),
     // 내용 가져오기
     ...pender({
-      type: get_APOD,
+      type: GET_APOD,
       onSuccess: (state, action) => {
         const { date, url, media_type: mediaType } = action.payload.data;
         // 현재 상태에 maxDate가 설정되어 있지 않다면 설정하기 위해 temnp 상태 생성

@@ -3,9 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.18.0",
+    "classnames": "^2.2.6",
+    "immutable": "^3.8.2",
+    "include-media": "^1.4.9",
+    "moment": "^2.22.2",
+    "node-sass": "^4.9.3",
+    "open-color": "^1.6.3",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "react-scripts": "2.0.4"
+    "react-icons": "^3.1.0",
+    "react-redux": "^5.0.7",
+    "react-scripts": "2.0.4",
+    "redux": "^4.0.0",
+    "redux-actions": "^2.6.1",
+    "redux-pender": "^1.2.1"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -6,6 +6,7 @@ import Viewer from './Viewer';
 import * as api from 'lib/api';
 
 class App extends Component {
+  1;
   componentDidMount() {
     this.getApod();
   }

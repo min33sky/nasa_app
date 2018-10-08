@@ -1,6 +1,6 @@
 # 리액트로 NASA API 활용한 앱 만들기
 
-[미리보기](http://min33sky.github.io/nasa-app/)
+[미리보기](http://min33sky.github.io/nasa_app/)
 
 ## 수정
 
@@ -15,6 +15,7 @@
 - better-react-spinkit: `로딩` 시 보여줄 컴포넌트
 - react-icons: SVG 형태의 리액트 컴포넌트 모음 라이브러리
 - moment: `날짜` 관련 라이브러리
+- immutable: `불변성` 관련 라이브러리
 - redux, react-redux, redux-actions, redux-pender: `Redux` 관련 모듈
 
 ## 참고

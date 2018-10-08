@@ -1,1 +1,1 @@
-export { default as ViewTemplate } from './ViewTemplate';
+export { default } from './ViewTemplate';

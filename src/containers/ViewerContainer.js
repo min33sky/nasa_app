@@ -9,7 +9,7 @@ class ViewerContainer extends Component {
 
   getApod = async () => {
     const { ApodActions, loading, date } = this.props;
-    loading && this.req.cancel(); // 로딩중이라면 기존의 요청 취소
+    loading && this.req.cancel(); // 로딩중이라면 기존의 요청 취소 (redux-pender)
 
     try {
       // this.req에 Promise 담기

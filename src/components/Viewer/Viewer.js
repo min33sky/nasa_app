@@ -10,7 +10,9 @@ import styles from './Viewer.module.scss';
 const Viewer = ({ mediaType, url, loading }) => {
   return (
     <div className={styles.viewer}>
-      {mediaType === 'image' ? (
+      {url === null ? (
+        <div className={styles.error}>Server Error</div>
+      ) : mediaType === 'image' ? (
         <img onClick={() => window.open(url)} src={url} alt="space" />
       ) : (
         <iframe

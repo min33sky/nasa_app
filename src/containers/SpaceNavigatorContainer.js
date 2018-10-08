@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import SpaceNavigator from 'components/SpaceNavigator';
 import * as apodActions from 'store/modules/apod';
-import { SpaceNavigator } from 'components/SpaceNavigator';
 
 class SpaceNavigatorContainer extends Component {
   handlePrev = () => {
@@ -18,7 +18,14 @@ class SpaceNavigatorContainer extends Component {
 
   render() {
     const { handlePrev, handleNext } = this;
-    return <SpaceNavigator onPrev={handlePrev} onNext={handleNext} />;
+    const { date, maxDate } = this.props;
+    return (
+      <SpaceNavigator
+        onPrev={handlePrev}
+        onNext={handleNext}
+        endDate={date === maxDate}
+      />
+    );
   }
 }
 

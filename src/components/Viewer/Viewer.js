@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Viewer.module.scss';
+import { FadingCircle } from 'better-react-spinkit';
 
 /**
  * 뷰어 컴포넌트
@@ -8,11 +9,20 @@ import styles from './Viewer.module.scss';
  * @param {boolean} loading loading
  */
 const Viewer = ({ mediaType, url, loading }) => {
+  if (loading) {
+    // 로딩중일때 로더 보여주기
+    return (
+      <div className={styles.viewer}>
+        <FadingCircle color="white" size={60} />
+      </div>
+    );
+  }
+
+  if (!url) return null;
+
   return (
     <div className={styles.viewer}>
-      {url === null ? (
-        <div className={styles.error}>Server Error</div>
-      ) : mediaType === 'image' ? (
+      {mediaType === 'image' ? (
         <img onClick={() => window.open(url)} src={url} alt="space" />
       ) : (
         <iframe

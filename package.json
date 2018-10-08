@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
+    "better-react-spinkit": "^2.0.4",
     "classnames": "^2.2.6",
     "immutable": "^3.8.2",
     "include-media": "^1.4.9",
@@ -23,7 +24,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -33,5 +36,9 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "homepage": "http://min33sky.github.io/nasa-app",
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }

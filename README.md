@@ -1,10 +1,10 @@
 # 리액트로 NASA API 활용한 앱 만들기
 
-[미리보기](https://min33sky.github.io/Nasa/)
+[미리보기](http://min33sky.github.io/nasa-app/)
 
 ## 수정
 
-- Create-React-App version 2 업데이트에 따라 Sass 관련 변경
+- Create-React-App version 2 업데이트에 따라 Sass 관련 업데이트
 
 ## 사용 모듈
 

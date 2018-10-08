@@ -29,15 +29,4 @@
     width: calc(100% - 10rem);
     height: calc(100% - 10rem);
   }
-
-  // Error
-  .error {
-    background: red;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 10rem;
-    color: white;
-  }
 }
